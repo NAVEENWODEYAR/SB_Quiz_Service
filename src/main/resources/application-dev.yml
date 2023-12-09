@@ -1,0 +1,17 @@
+
+spring:
+  application:
+    name: QUIZ-SERVICE
+  datasource:
+    driver-class-name: 
+    url: 
+    username: 
+    password: 
+  jpa:
+    database: MYSQL
+    show-sql: true
+    generate-ddl: true
+
+server:
+  port: 8521
+  
