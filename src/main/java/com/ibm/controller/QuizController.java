@@ -25,6 +25,15 @@ public class QuizController
 	private QuizService quizService;
 //	private QuizService quizService;
 	
+	
+	// test endPoint,
+	@GetMapping
+	@ResponseStatus(code = HttpStatus.I_AM_A_TEAPOT)
+	public String greetMsg()
+	{
+		return "Welcome to the Quiz-Service Application,";
+	}
+	
 	@GetMapping("/getQuiz")
 	@ResponseStatus(code = HttpStatus.OK)
 	public List<Quiz> getQuiz()
@@ -32,7 +41,7 @@ public class QuizController
 		return quizService.get();
 	}
 	
-	@GetMapping("/id/{}")
+	@GetMapping("/{id}")
 	@ResponseStatus(code = HttpStatus.FOUND)
 	public Quiz getQuiz(@PathVariable Long qId)
 	{
