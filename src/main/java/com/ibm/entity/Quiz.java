@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Quiz 
+public class Quiz
 {
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
