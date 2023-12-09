@@ -11,6 +11,8 @@ spring:
     database: MYSQL
     show-sql: true
     generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
 
 server:
   port: 8521

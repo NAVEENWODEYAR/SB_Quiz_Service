@@ -26,7 +26,7 @@ public class QuizController
 //	private QuizService quizService;
 	
 	
-	// test endPoint,
+	// test endPoint,	
 	@GetMapping
 	@ResponseStatus(code = HttpStatus.I_AM_A_TEAPOT)
 	public String greetMsg()
