@@ -1,5 +1,4 @@
 # Dockerfile,
-
 FROM openjdk:17
 RUN mkdir /usr/app/ 
 COPY target/Quiz-Service-App.jar /usr/app
